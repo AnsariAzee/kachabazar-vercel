@@ -109,7 +109,6 @@ const Navbar = ({ category }) => {
    
     { label: "About Us", icon: <MdInfo />, link: "/about" },
     { label: "Contact Us", icon: <MdContactSupport />, link: "/contact" },
-    { label: "Weather", icon: <MdWbSunny />, link: "/weather" },
     { label: "FAQ", icon: <MdQuestionAnswer />, link: "/faq" },
     { label: "Privacy Policy", icon: <MdPolicy />, link: "/privacy-policy" },
     { label: "Terms & Conditions", icon: <MdSecurity />, link: "/terms-condition" },
