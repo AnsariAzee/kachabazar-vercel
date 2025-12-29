@@ -27,7 +27,7 @@ const Topbar = () => {
         withCredentials: true,
       });
       dispatch(clearUser());
-      localStorage.removeItem('user');
+      localStorage.removeItem("user");
       Swal.fire({
         icon: 'success',
         title: 'Logged Out',
