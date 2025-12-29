@@ -131,7 +131,7 @@ export const logout = (req, res) => {
   res.clearCookie("token", {
     httpOnly: true,
     secure: true, // keep true if using HTTPS (Render)
-    sameSite: "None", // same as you used while setting cookie
+    sameSite: "none", // same as you used while setting cookie
     path: "/", // global cookie path
   });
 
