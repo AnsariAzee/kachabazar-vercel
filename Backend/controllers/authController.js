@@ -131,7 +131,7 @@ export const logout = (req, res) => {
   res.clearCookie("token", {
     httpOnly: true,
     secure: true, // keep true if using HTTPS (Render)
-    sameSite: "None", // same as you used while setting cookie
+    sameSite: "none", // same as you used while setting cookie
     path: "/", // global cookie path
   });
 
@@ -199,7 +199,7 @@ export const googleCallback = async (req, res) => {
   res.cookie('token', token, {
     httpOnly: true,
     secure: process.env.NODE_ENV === 'production',
-    sameSite: 'None',
+    sameSite: 'none',
     maxAge: 7 * 24 * 60 * 60 * 1000,// 7 days
     //  domain: '192.168.1.34'
   });
